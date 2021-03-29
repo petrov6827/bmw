@@ -1,14 +1,31 @@
 import React from 'react';
 import s from './Body.modules.scss';
 import Product from "../Product/Product";
+import Charachters from "../Charachters/Charachters";
+import bmw1 from "../../images/bmw1.png";
+import bmw1_blue from "../../images/bmw1_blue.png";
+import bmw2 from "../../images/bmw2.png";
 
 const Body = (props) => {
+    const vel = {
+        vel1: [
+            { id: 1, name: 'BMW CRUISE BIKE', image: 'bmw1' },
+            { id: 2, name: 'BMW CRUISE BIKE', image: 'bmw1_blue' },
+            { id: 3, name: 'BMW M BIKE', image: 'bmw2' },
+        ],
+    }
+
+    let products = vel.vel1.map((pr) => (
+        <Product name={pr.name} image={pr.image} />
+    ))
+
     return (
         <div className={s.body}>
-            <div className={s.titlechoose}></div>Выбрать велосипед
+            <div className={s.titlechoose}>Р’С‹Р±РµСЂРёС‚Рµ РІРµР»РёРє</div>
             <div className={s.products_wrapper}>
-                <Product />
+                {products}
             </div>
+            <Charachters />
         </div>
     )
 }

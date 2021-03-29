@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e165a8b6-ebe6-4ebc-a66b-00bdae41cd37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Body.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Body.modules.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Greetings.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SimpleForm/SimpleForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bmw1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bmw1_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bmw1_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bmw1_blue_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bmw2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bmw2_big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Charachters/Char.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Charachters/Charachters.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Greetings.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +37,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -63,6 +51,7 @@
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
@@ -75,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1616415460422</updated>
       <workItem from="1616415463486" duration="2821000" />
-      <workItem from="1616419735542" duration="4690000" />
+      <workItem from="1616419735542" duration="6221000" />
+      <workItem from="1616940256694" duration="8492000" />
     </task>
     <servers />
   </component>
