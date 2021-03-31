@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Body.modules.scss';
 import Product from "../Product/Product";
-import Charachters from "../Charachters/Charachters";
 import bmw1 from "../../images/bmw1.png";
 import bmw1_blue from "../../images/bmw1_blue.png";
 import bmw2 from "../../images/bmw2.png";
@@ -15,17 +14,16 @@ const Body = (props) => {
         ],
     }
 
-    let products = vel.vel1.map((pr) => (
-        <Product name={pr.name} image={pr.image} />
-    ))
+    // let products = vel.vel1.map((pr) => (
+    //     <Product name={pr.name} image={pr.image} />
+    // ))
 
     return (
         <div className={s.body}>
             <div className={s.titlechoose}>Выберите велик</div>
             <div className={s.products_wrapper}>
-                {products}
+                <Product />
             </div>
-            <Charachters />
         </div>
     )
 }

@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e165a8b6-ebe6-4ebc-a66b-00bdae41cd37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Charachters/Char.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Charachters/Charachters.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.33bf114b.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.33bf114b.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.47560f60.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.47560f60.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.47560f60.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/3.72bf4b65.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/3.72bf4b65.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.a5f8397c.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.a5f8397c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.909f4ab3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.909f4ab3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/logo.6ce24c58.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Body/Body.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Greetings.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Charachters/Char.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Charachters/Char.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Charachters/Charachters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Charachters/Charachters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +80,8 @@
       <updated>1616415460422</updated>
       <workItem from="1616415463486" duration="2821000" />
       <workItem from="1616419735542" duration="6221000" />
-      <workItem from="1616940256694" duration="8492000" />
+      <workItem from="1616940256694" duration="9148000" />
+      <workItem from="1617101855875" duration="17219000" />
     </task>
     <servers />
   </component>

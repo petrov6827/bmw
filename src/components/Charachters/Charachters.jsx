@@ -3,22 +3,28 @@ import s from './Char.module.scss';
 
 
 const Charachters = (props) => {
+    const productSpec = (
+        <div>
+            {props.spec.map((spec) =>
+                <div
+                    className = {s.spec}
+                    key = {spec.id}
+                >
+                    <p>{spec.about}</p>
+                    <b>{spec.year}</b>
+
+                </div>
+            )}
+        </div>
+    );
+
     return (
-        <div className={s.product}>
-            <div className={s.char}>
-                {Char.about}
-            </div>
-            <div className={s.char}>
-                {Char.year}
-            </div>
+        <div>
+            {productSpec}
         </div>
     );
 };
 
-const Char = {
-    about: 'Велосипед BMW Cruise из коллекции 2019 года. Разработанный в сотрудничестве с компанией Designworks изящный дизайн рамы соответствует моде на велосипеды-фиксы. Оснащён удобной планетарной передачей, преимуществами которой являются простота технического обслуживания и износоустойчивость. Спортивные грипсы для более надежного захвата. Гидравлические дисковые тормоза спереди и сзади.',
-    year: '2020'
-}
 
 export default Charachters;
 

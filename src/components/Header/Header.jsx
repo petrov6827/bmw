@@ -8,9 +8,6 @@ const Header = (props) => {
             <div className={s.logo}>
                 <img src={logo} className={s.logoheader} alt="logo" />
             </div>
-            <div className={s.header_link}> Оплата</div>
-            <div className={s.header_link}> Доставка</div>
-            <div className={s.header_link}> Контакты</div>
         </div>
     );
 };
