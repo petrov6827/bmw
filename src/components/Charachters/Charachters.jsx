@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './Char.module.scss';
 
 
 const Charachters = (props) => {
+    const [char, changeChar] = useState(spec[0].about);
+    const [price, changePrice] = useState(100000);
+
     const productSpec = (
-        <div className = {s.spec}
-             key = {spec[0].id}>
-            <p>id: {spec[0].id}</p>
-            <p>{spec[0].about}</p>
-            <b>{spec[0].year}</b>
-        </div>
-    );
+    <div>
+        <div className={s.subtitle}>Характеристики:</div>
+        <p>{char}</p>
+        <div className={s.subtitle}>Цена: {price} руб.</div>
+    </div>
+    )
 
     return (
         <div>

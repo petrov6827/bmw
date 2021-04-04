@@ -1,47 +1,59 @@
 import React, {useState, useEffect} from 'react';
 import s from './Product.module.scss';
-import Charachters from "../Charachters/Charachters";
+// import Charachters from "../Charachters/Charachters";
 import bmw1 from "../../images/bmw1.png";
 import bmw1_blue from "../../images/bmw1_blue.png";
 import bmw2 from "../../images/bmw2.png";
 
 
-const ProductList = (props) => {
 
-    const [count, setCount] = useState(0);
-    // Аналогично componentDidMount и componentDidUpdate:
+
+const Products = (props) => {
+    const spec = [
+        {id: 1, about: 'Велосипед BMW Cruise из коллекции 2020 года. Планетарная передача Спортивные грипсы для более надежного захвата Гидравлические дисковые тормоза спереди и сзади', year: '2020'},
+        {id: 2, about: 'Велосипед BMW с полосами «M Motorsport», ' +
+                'Манетки Deore, ' +
+            'Седло Selle Royal S1', year: '2021'},
+    ]
+
+    const [char, changeChar] = useState(spec[0].about);
+    const [price, changePrice] = useState(100000);
+
     useEffect(() => {
-        // Обновляем заголовок документа с помощью API браузера
-        document.title = `Вы нажали ${count} раз`;
+        console.log('render');
     });
 
     const product = (
         <div>
             <div className={s.pr}>
-                {
-                    props.products.map((product) =>
-                        <button
-                            onClick={() => setCount(count+1)}
-                            className={s.pr_name}
-                            key={product.id}
-                        >
-                            <h3>{product.name}</h3>
-                            <img src={product.image}/>
-                            <p>{count} шт.</p>
-                        </button>
-                    )}
+                <button
+                    onClick={() => {
+                        changeChar(spec[0].about);
+                        changePrice(100000);
+                    }}
+                    className={s.pr_name}
+                >
+                    <h3>BMW CRUISE BIKE</h3>
+                    <img src={bmw1} />
+                </button>
+                <button
+                    onClick={() => {
+                        changeChar(spec[1].about);
+                        changePrice(150000);
+                    }}
+                    className={s.pr_name}
+                >
+                    <h3>BMW M BIKE</h3>
+                    <img src={bmw2} />
+                </button>
+            </div>
+            <div className={s.ch}>
+                <div className={s.subtitle}>Характеристики:</div>
+                <p className={s.text}>{char}</p>
+                <div className={s.subtitle}>Цена: {price} руб.</div>
             </div>
         </div>
     );
-
-    const showChar = () => {
-        <Charachters spec={spec} />
-    }
-
-    const spec = [
-        {id: 1, about: 'Велосипед BMW Cruise из коллекции 2020 года. ', year: '2020'},
-        {id: 2, about: 'Велосипед BMW с полосами «M Motorsport»', year: '2021'},
-    ]
 
     return (
         <div>
@@ -51,21 +63,11 @@ const ProductList = (props) => {
     );
 }
 
+const products = [
+    {id: 1, name: 'BMW CRUISE BIKE', image: '../../images/bmw1.png'},
+    {id: 2, name: 'BMW M BIKE', image: '../../images/bmw1_blue.png'},
+];
 
-
-
-
-
-export default ProductList;
-
-// const vel = {
-//     vel1: [
-//         { id: 1, name: 'BMW CRUISE BIKE', image: 'bmw1' },
-//         { id: 2, name: 'BMW CRUISE BIKE', image: 'bmw1_blue' },
-//     ],
-//     vel2: [
-//         { id: 3, name: 'BMW M BIKE', image: 'bmw2' },
-//     ]
-// }
+export default Products;
 
 
