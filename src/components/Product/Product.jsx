@@ -6,22 +6,38 @@ import bmw1_blue from "../../images/bmw1_blue.png";
 import bmw2 from "../../images/bmw2.png";
 
 
-
-
 const Products = (props) => {
+
+    const cruiseChar = ['Диаметр колёс', 'Количество скоростей'];
+    const mChar = 
+        <ul>
+        <li>Класс велосипеда</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     const spec = [
-        {id: 1, about: 'Велосипед BMW Cruise из коллекции 2020 года. Планетарная передача Спортивные грипсы для более надежного захвата Гидравлические дисковые тормоза спереди и сзади', year: '2020'},
-        {id: 2, about: 'Велосипед BMW с полосами «M Motorsport», ' +
+        {
+            id: 1,
+            about: 'Велосипед BMW Cruise из коллекции 2020 года. Планетарная передача Спортивные грипсы для более надежного захвата Гидравлические дисковые тормоза спереди и сзади, полный обзор велосипеда: ',
+            link: 'https://www.vedomosti.ru/auto/articles/2016/09/01/655355-bmw-cruise-m-bike'
+        },
+        {
+            id: 2,
+            about: 'Велосипед BMW с полосами «M Motorsport», ' +
                 'Манетки Deore, ' +
-            'Седло Selle Royal S1', year: '2021'},
+                'Седло Selle Royal S1',
+            link: 'https://www.vedomosti.ru/auto/articles/2016/09/01/655355-bmw-cruise-m-bike'
+        },
     ]
 
     const [char, changeChar] = useState(spec[0].about);
     const [price, changePrice] = useState(100000);
+    const [color, changeColor] = useState(bmw1);
 
-    useEffect(() => {
-        console.log('render');
-    });
+    // useEffect(() => {
+    //     console.log('render');
+    // });
 
     const product = (
         <div>
@@ -34,8 +50,22 @@ const Products = (props) => {
                     className={s.pr_name}
                 >
                     <h3>BMW CRUISE BIKE</h3>
-                    <img src={bmw1} />
+                    <img src={color}/>
+                    <div>
+                        <button
+                            onClick={() => {
+                                changeColor(bmw1)
+                            }}>серебристый
+                        </button>
+                        <button
+                            onClick={() => {
+                                changeColor(bmw1_blue)
+                            }}>синий
+                        </button>
+                    </div>
+
                 </button>
+
                 <button
                     onClick={() => {
                         changeChar(spec[1].about);
@@ -44,7 +74,7 @@ const Products = (props) => {
                     className={s.pr_name}
                 >
                     <h3>BMW M BIKE</h3>
-                    <img src={bmw2} />
+                    <img src={bmw2}/>
                 </button>
             </div>
             <div className={s.ch}>
