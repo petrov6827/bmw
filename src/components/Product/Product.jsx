@@ -8,25 +8,38 @@ import bmw2 from "../../images/bmw2.png";
 
 const Products = (props) => {
 
-    const cruiseChar = ['Диаметр колёс', 'Количество скоростей'];
-    const mChar = 
-        <ul>
-        <li>Класс велосипеда</li>
-        <li></li>
-        <li></li>
-        <li></li>
+    const cruiseChar = <ul>
+        <li>Рама: алюминий.</li>
+        <li>Стойка седла и под рулевой вал выполнены из карбона.</li>
+        <li>Вилка: SR Suntour XCRRL-R с дистанционной блокировкой жёсткости.</li>
+        <li>Механизм переключения Shimano Deore/XT (30 передач).</li>
+        <li>Седло: Selle Royal Setta S1.</li>
+        <li>Руль: Velo VLG-719 Round grips, эргономичные короткие спортивные ручки Herrmanns DD33.</li>
+        <li>Ободья: Rodi Airline Plus, 28".</li>
+        <li>Шины Continental Cruise CONTACT со вставками из кевлара и светоотражающими полосами.</li>
+        <li>Тормоза: гидравлические дисковые Shimano BR-M395, диаметр дисков 180 мм. спереди и 160 мм. сзади.</li>
+        <li>Масса: 14,8 кг.</li>
     </ul>
+    const mBikeChar = <ul>
+            <li>Рама: алюминий.</li>
+            <li>Тормоза: Shimano 180 мм (передние), 160 мм (задние).</li>
+            <li>Вилка: карбон.</li>
+            <li>Седло: Selle Royal Mach 2, черное.</li>
+            <li>Переключатель: Shimano SLX / XT, 11 скоростей (цепная передача).</li>
+            <li>Шины: Continental Grand Sport Extra.</li>
+            <li>Ободья: Rody Airline Corsa 28", черные.</li>
+            <li>Грипсы: Ergon GE-1.</li>
+            <li>Масса: 12,5 кг.</li>
+        </ul>
     const spec = [
         {
             id: 1,
-            about: 'Велосипед BMW Cruise из коллекции 2020 года. Планетарная передача Спортивные грипсы для более надежного захвата Гидравлические дисковые тормоза спереди и сзади, полный обзор велосипеда: ',
+            about: cruiseChar,
             link: 'https://www.vedomosti.ru/auto/articles/2016/09/01/655355-bmw-cruise-m-bike'
         },
         {
             id: 2,
-            about: 'Велосипед BMW с полосами «M Motorsport», ' +
-                'Манетки Deore, ' +
-                'Седло Selle Royal S1',
+            about: mBikeChar,
             link: 'https://www.vedomosti.ru/auto/articles/2016/09/01/655355-bmw-cruise-m-bike'
         },
     ]
@@ -62,6 +75,7 @@ const Products = (props) => {
                                 changeColor(bmw1_blue)
                             }}>синий
                         </button>
+
                     </div>
 
                 </button>
@@ -88,7 +102,6 @@ const Products = (props) => {
     return (
         <div>
             {product}
-            <hr/>
         </div>
     );
 }
