@@ -1,10 +1,19 @@
 import React, {useState, useEffect} from 'react';
 import s from './Product.module.scss';
-// import Charachters from "../Charachters/Charachters";
 import bmw1 from "../../images/bmw1.png";
 import bmw1_blue from "../../images/bmw1_blue.png";
 import bmw2 from "../../images/bmw2.png";
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import {Button, Card} from "@material-ui/core";
 
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            main: '#1c69d4',
+        },
+    },
+});
 
 const Products = (props) => {
 
@@ -20,27 +29,28 @@ const Products = (props) => {
         <li>Тормоза: гидравлические дисковые Shimano BR-M395, диаметр дисков 180 мм. спереди и 160 мм. сзади.</li>
         <li>Масса: 14,8 кг.</li>
     </ul>
+
     const mBikeChar = <ul>
-            <li>Рама: алюминий.</li>
-            <li>Тормоза: Shimano 180 мм (передние), 160 мм (задние).</li>
-            <li>Вилка: карбон.</li>
-            <li>Седло: Selle Royal Mach 2, черное.</li>
-            <li>Переключатель: Shimano SLX / XT, 11 скоростей (цепная передача).</li>
-            <li>Шины: Continental Grand Sport Extra.</li>
-            <li>Ободья: Rody Airline Corsa 28", черные.</li>
-            <li>Грипсы: Ergon GE-1.</li>
-            <li>Масса: 12,5 кг.</li>
-        </ul>
+        <li>Рама: алюминий.</li>
+        <li>Тормоза: Shimano 180 мм (передние), 160 мм (задние).</li>
+        <li>Вилка: карбон.</li>
+        <li>Седло: Selle Royal Mach 2, черное.</li>
+        <li>Переключатель: Shimano SLX / XT, 11 скоростей (цепная передача).</li>
+        <li>Шины: Continental Grand Sport Extra.</li>
+        <li>Ободья: Rody Airline Corsa 28", черные.</li>
+        <li>Грипсы: Ergon GE-1.</li>
+        <li>Масса: 12,5 кг.</li>
+    </ul>
     const spec = [
         {
             id: 1,
             about: cruiseChar,
-            link: 'https://www.vedomosti.ru/auto/articles/2016/09/01/655355-bmw-cruise-m-bike'
+            link: ''
         },
         {
             id: 2,
             about: mBikeChar,
-            link: 'https://www.vedomosti.ru/auto/articles/2016/09/01/655355-bmw-cruise-m-bike'
+            link: ''
         },
     ]
 
@@ -48,54 +58,50 @@ const Products = (props) => {
     const [price, changePrice] = useState(100000);
     const [color, changeColor] = useState(bmw1);
 
-    // useEffect(() => {
-    //     console.log('render');
-    // });
-
     const product = (
         <div>
-            <div className={s.pr}>
-                <button
-                    onClick={() => {
-                        changeChar(spec[0].about);
-                        changePrice(100000);
-                    }}
-                    className={s.pr_name}
-                >
-                    <h3>BMW CRUISE BIKE</h3>
-                    <img src={color}/>
-                    <div>
-                        <button
-                            onClick={() => {
-                                changeColor(bmw1)
-                            }}>серебристый
-                        </button>
-                        <button
-                            onClick={() => {
-                                changeColor(bmw1_blue)
-                            }}>синий
-                        </button>
+            {/*<div className={s.title}>Оригинальные велосипеды BMW в России</div>*/}
+            {/*<div className={s.subtitle_choose}>Выберите велосипед:</div>*/}
+            {/*<div className={s.pr}>*/}
+            {/*    <ThemeProvider theme={theme}>*/}
+            {/*    <Button className={s.pr_btn} variant="outlined" color="primary"*/}
+            {/*        onClick={() => {*/}
+            {/*            changeChar(spec[0].about);*/}
+            {/*            changePrice(100000);*/}
+            {/*        }}*/}
+            {/*    >*/}
+            {/*        <h3>BMW CRUISE BIKE</h3>*/}
+            {/*        <img src={color}/>*/}
+            {/*        <div className={s.btns_wrapper}>*/}
+            {/*            <Button variant="contained" color="default"*/}
+            {/*                onClick={() => {*/}
+            {/*                    changeColor(bmw1)*/}
+            {/*                }}>серебристый*/}
+            {/*            </Button>*/}
+            {/*            <Button variant="contained" color="primary"*/}
+            {/*                onClick={() => {*/}
+            {/*                    changeColor(bmw1_blue)*/}
+            {/*                }}>синий*/}
+            {/*            </Button>*/}
+            {/*        </div>*/}
+            {/*    </Button>*/}
 
-                    </div>
-
-                </button>
-
-                <button
-                    onClick={() => {
-                        changeChar(spec[1].about);
-                        changePrice(150000);
-                    }}
-                    className={s.pr_name}
-                >
-                    <h3>BMW M BIKE</h3>
-                    <img src={bmw2}/>
-                </button>
-            </div>
-            <div className={s.ch}>
-                <div className={s.subtitle}>Характеристики:</div>
-                <p className={s.text}>{char}</p>
-                <div className={s.subtitle}>Цена: {price} руб.</div>
-            </div>
+            {/*    <Button className={s.pr_btn} variant="outlined" color="primary"*/}
+            {/*        onClick={() => {*/}
+            {/*            changeChar(spec[1].about);*/}
+            {/*            changePrice(150000);*/}
+            {/*        }}*/}
+            {/*    >*/}
+            {/*        <h3>BMW M BIKE</h3>*/}
+            {/*        <img src={bmw2}/>*/}
+            {/*    </Button>*/}
+            {/*    </ThemeProvider>*/}
+            {/*</div>*/}
+            {/*<div className={s.ch}>*/}
+            {/*    <div className={s.subtitle}>Характеристики:</div>*/}
+            {/*    <p className={s.text}>{char}</p>*/}
+            {/*    <div className={s.subtitle}>Цена: {price} руб.</div>*/}
+            {/*</div>*/}
         </div>
     );
 
@@ -104,6 +110,7 @@ const Products = (props) => {
             {product}
         </div>
     );
+
 }
 
 const products = [
