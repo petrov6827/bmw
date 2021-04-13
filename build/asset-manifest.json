@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.049d023c.chunk.css",
-    "main.js": "/static/js/main.034d6297.chunk.js",
-    "main.js.map": "/static/js/main.034d6297.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ee7393ea.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ee7393ea.js.map",
-    "static/js/2.1210a50e.chunk.js": "/static/js/2.1210a50e.chunk.js",
-    "static/js/2.1210a50e.chunk.js.map": "/static/js/2.1210a50e.chunk.js.map",
-    "static/js/3.e781ed6e.chunk.js": "/static/js/3.e781ed6e.chunk.js",
-    "static/js/3.e781ed6e.chunk.js.map": "/static/js/3.e781ed6e.chunk.js.map",
+    "main.css": "/static/css/main.bfd13e37.chunk.css",
+    "main.js": "/static/js/main.b0fd0285.chunk.js",
+    "main.js.map": "/static/js/main.b0fd0285.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.48acf569.js",
+    "runtime-main.js.map": "/static/js/runtime-main.48acf569.js.map",
+    "static/css/2.86a5f087.chunk.css": "/static/css/2.86a5f087.chunk.css",
+    "static/js/2.8d6b7451.chunk.js": "/static/js/2.8d6b7451.chunk.js",
+    "static/js/2.8d6b7451.chunk.js.map": "/static/js/2.8d6b7451.chunk.js.map",
+    "static/js/3.f4e25a11.chunk.js": "/static/js/3.f4e25a11.chunk.js",
+    "static/js/3.f4e25a11.chunk.js.map": "/static/js/3.f4e25a11.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.049d023c.chunk.css.map": "/static/css/main.049d023c.chunk.css.map",
-    "static/js/2.1210a50e.chunk.js.LICENSE.txt": "/static/js/2.1210a50e.chunk.js.LICENSE.txt",
+    "static/css/2.86a5f087.chunk.css.map": "/static/css/2.86a5f087.chunk.css.map",
+    "static/css/main.bfd13e37.chunk.css.map": "/static/css/main.bfd13e37.chunk.css.map",
+    "static/js/2.8d6b7451.chunk.js.LICENSE.txt": "/static/js/2.8d6b7451.chunk.js.LICENSE.txt",
+    "static/media/BMW_Grey_Logo.70013e13.svg": "/static/media/BMW_Grey_Logo.70013e13.svg",
     "static/media/bmw1.49274298.png": "/static/media/bmw1.49274298.png",
     "static/media/bmw1_blue.b8551ee7.png": "/static/media/bmw1_blue.b8551ee7.png",
     "static/media/bmw2.26efd327.png": "/static/media/bmw2.26efd327.png",
-    "static/media/logo.4ba23c0f.svg": "/static/media/logo.4ba23c0f.svg"
+    "static/media/index.css": "/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee7393ea.js",
-    "static/js/2.1210a50e.chunk.js",
-    "static/css/main.049d023c.chunk.css",
-    "static/js/main.034d6297.chunk.js"
+    "static/js/runtime-main.48acf569.js",
+    "static/css/2.86a5f087.chunk.css",
+    "static/js/2.8d6b7451.chunk.js",
+    "static/css/main.bfd13e37.chunk.css",
+    "static/js/main.b0fd0285.chunk.js"
   ]
 }

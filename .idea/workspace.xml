@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e165a8b6-ebe6-4ebc-a66b-00bdae41cd37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CallbackModal/CallbackModal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CallbackModal/CallbackModal.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/BMW_Grey_Logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Buy/Buy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buy/Buy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Buy/Buy.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buy/Buy.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SimpleForm/SimpleForm.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +63,7 @@
       <workItem from="1617692066861" duration="1581000" />
       <workItem from="1617715894165" duration="6187000" />
       <workItem from="1617868267536" duration="839000" />
-      <workItem from="1617888094759" duration="26460000" />
+      <workItem from="1617888094759" duration="26944000" />
     </task>
     <task id="LOCAL-00001" summary="форма заказа">
       <created>1617804456496</created>
@@ -131,6 +120,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="форма заказа" />
     <option name="LAST_COMMIT_MESSAGE" value="форма заказа" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/CallbackModal/CallbackModal.jsx</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
