@@ -5,14 +5,14 @@ import bmw1_blue from "../../images/bmw1_blue.png";
 import bmw2 from "../../images/bmw2.png";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import {Button, Card} from "@material-ui/core";
+import {Button, ButtonGroup, Card} from "@material-ui/core";
 
 const theme = createMuiTheme({
     palette: {
         primary: {
             main: '#1c69d4',
         },
-    },
+    }
 });
 
 const Products = (props) => {
@@ -60,48 +60,51 @@ const Products = (props) => {
 
     const product = (
         <div>
-            {/*<div className={s.title}>Оригинальные велосипеды BMW в России</div>*/}
-            {/*<div className={s.subtitle_choose}>Выберите велосипед:</div>*/}
-            {/*<div className={s.pr}>*/}
-            {/*    <ThemeProvider theme={theme}>*/}
-            {/*    <Button className={s.pr_btn} variant="outlined" color="primary"*/}
-            {/*        onClick={() => {*/}
-            {/*            changeChar(spec[0].about);*/}
-            {/*            changePrice(100000);*/}
-            {/*        }}*/}
-            {/*    >*/}
-            {/*        <h3>BMW CRUISE BIKE</h3>*/}
-            {/*        <img src={color}/>*/}
-            {/*        <div className={s.btns_wrapper}>*/}
-            {/*            <Button variant="contained" color="default"*/}
-            {/*                onClick={() => {*/}
-            {/*                    changeColor(bmw1)*/}
-            {/*                }}>серебристый*/}
-            {/*            </Button>*/}
-            {/*            <Button variant="contained" color="primary"*/}
-            {/*                onClick={() => {*/}
-            {/*                    changeColor(bmw1_blue)*/}
-            {/*                }}>синий*/}
-            {/*            </Button>*/}
-            {/*        </div>*/}
-            {/*    </Button>*/}
+            <div className={s.title}>Оригинальные велосипеды BMW в России</div>
+            <div className={s.subtitle_choose}>Выберите велосипед:</div>
+            <div className={s.pr}>
+                <ThemeProvider theme={theme}>
+                <Button className={s.pr_btn} variant="outlined" color="primary"
+                    onClick={() => {
+                        changeChar(spec[0].about);
+                        changePrice(100000);
+                    }}
+                >
+                    <h3>BMW CRUISE BIKE</h3>
+                    <img src={color}/>
+                    <div className={s.btns_wrapper}>
+                        <ButtonGroup className={s.btns_group}>
+                            <Button variant="contained" color="default"
+                                onClick={() => {
+                                    changeColor(bmw1)
+                                }}>серебристый
+                            </Button>
+                            <Button variant="contained" color="primary"
+                                onClick={() => {
+                                    changeColor(bmw1_blue)
+                                }}>синий
+                            </Button>
+                        </ButtonGroup>
+                    </div>
+                </Button>
 
-            {/*    <Button className={s.pr_btn} variant="outlined" color="primary"*/}
-            {/*        onClick={() => {*/}
-            {/*            changeChar(spec[1].about);*/}
-            {/*            changePrice(150000);*/}
-            {/*        }}*/}
-            {/*    >*/}
-            {/*        <h3>BMW M BIKE</h3>*/}
-            {/*        <img src={bmw2}/>*/}
-            {/*    </Button>*/}
-            {/*    </ThemeProvider>*/}
-            {/*</div>*/}
-            {/*<div className={s.ch}>*/}
-            {/*    <div className={s.subtitle}>Характеристики:</div>*/}
-            {/*    <p className={s.text}>{char}</p>*/}
-            {/*    <div className={s.subtitle}>Цена: {price} руб.</div>*/}
-            {/*</div>*/}
+
+                <Button className={s.pr_btn} variant="outlined" color="primary"
+                    onClick={() => {
+                        changeChar(spec[1].about);
+                        changePrice(150000);
+                    }}
+                >
+                    <h3>BMW M BIKE</h3>
+                    <img src={bmw2}/>
+                </Button>
+                </ThemeProvider>
+            </div>
+            <div className={s.ch}>
+                <div className={s.subtitle}>Характеристики:</div>
+                <p className={s.text}>{char}</p>
+                <div className={s.subtitle}>Цена: {price} руб.</div>
+            </div>
         </div>
     );
 
