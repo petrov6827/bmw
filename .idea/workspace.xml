@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e165a8b6-ebe6-4ebc-a66b-00bdae41cd37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/api/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <workItem from="1617715894165" duration="6187000" />
       <workItem from="1617868267536" duration="839000" />
       <workItem from="1617888094759" duration="26944000" />
-      <workItem from="1618326789684" duration="10662000" />
+      <workItem from="1618326789684" duration="10907000" />
     </task>
     <task id="LOCAL-00001" summary="форма заказа">
       <created>1617804456496</created>

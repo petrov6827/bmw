@@ -13,7 +13,10 @@ axios({
     method: 'post',
     url: `https://bmw-bycicle-default-rtdb.firebaseio.com/`,
     data: {
+        id: 1,
         name: 'pokemon',
-        phone: '02'
+
+        phone: '02',
+
     }
 })
