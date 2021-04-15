@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import s from './Product.module.scss';
 import bmw1 from "../../images/bmw1.png";
 import bmw1_blue from "../../images/bmw1_blue.png";
 import bmw2 from "../../images/bmw2.png";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import {Button, ButtonGroup, Card} from "@material-ui/core";
+import {Button, ButtonGroup} from "@material-ui/core";
 
 const theme = createMuiTheme({
     palette: {
@@ -71,7 +71,7 @@ const Products = (props) => {
                     }}
                 >
                     <h3>BMW CRUISE BIKE</h3>
-                    <img src={color}/>
+                    <img src={color} alt="M Cruise Bike"/>
                     <div className={s.btns_wrapper}>
                         <ButtonGroup className={s.btns_group}>
                             <Button variant="contained" color="default"
@@ -96,13 +96,13 @@ const Products = (props) => {
                     }}
                 >
                     <h3>BMW M BIKE</h3>
-                    <img src={bmw2}/>
+                    <img src={bmw2} alt="M Bike"/>
                 </Button>
                 </ThemeProvider>
             </div>
             <div className={s.ch}>
                 <div className={s.subtitle}>Характеристики:</div>
-                <p className={s.text}>{char}</p>
+                <div className={s.text}>{char}</div>
                 <div className={s.subtitle}>Цена: {price} руб.</div>
             </div>
         </div>
@@ -115,11 +115,6 @@ const Products = (props) => {
     );
 
 }
-
-const products = [
-    {id: 1, name: 'BMW CRUISE BIKE', image: '../../images/bmw1.png'},
-    {id: 2, name: 'BMW M BIKE', image: '../../images/bmw1_blue.png'},
-];
 
 export default Products;
 

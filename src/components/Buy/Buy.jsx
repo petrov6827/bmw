@@ -2,19 +2,6 @@ import React, {useState} from 'react';
 import s from './Buy.module.scss';
 import {Button, FormGroup, FormControl, InputLabel, Input, FormHelperText} from '@material-ui/core';
 
-
-import {createMuiTheme} from '@material-ui/core/styles';
-import {ThemeProvider} from '@material-ui/styles';
-
-// const theme = createMuiTheme({
-//     palette: {
-//         primary: {
-//             main: '#1c69d4',
-//         },
-//     },
-// });
-
-
 const Buy = (props) => {
     const [form, showForm] = useState();
     const buyForm = <FormGroup className={s.buyform}>
@@ -34,22 +21,16 @@ const Buy = (props) => {
         <Button className={s.submit} variant="contained" color="primary" type="submit" value="Отправить">Оставить
             заявку</Button>
     </FormGroup>
-
     return (
         <div className={s.buy}>
-
-            {/*<ThemeProvider theme={theme}>*/}
                 <Button variant="contained" color="primary"
                         onClick={() => {
                             showForm(buyForm)
                         }}
                 >Заказать
                 </Button>
-            {/*</ThemeProvider>*/}
             {form}
         </div>
-
-
     )
 }
 

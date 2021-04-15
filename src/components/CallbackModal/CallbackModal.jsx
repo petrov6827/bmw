@@ -6,7 +6,6 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 
-
 const useStyles = makeStyles((theme) => ({
     modal: {
         display: 'flex',
@@ -15,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         backgroundColor: theme.palette.background.paper,
-        border: '2px solid #000',
         boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
+        padding: theme.spacing(4, 4, 4),
     },
 }));
+
 const CallbackModal = (props) => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
@@ -39,8 +38,8 @@ const CallbackModal = (props) => {
                 Заказать обратный звонок
             </Button>
             <Modal
-                aria-labelledby="transition-modal-title"
-                aria-describedby="transition-modal-description"
+                aria-labelledby="CallbackModal-modal-title"
+                aria-describedby="CallbackModal-modal-description"
                 className={classes.modal}
                 open={open}
                 onClose={handleClose}
@@ -51,28 +50,28 @@ const CallbackModal = (props) => {
                 }}
             >
                 <Fade in={open}>
-                    <div className={classes.paper}>
+                    <form action="/callback.php" method="get" className={classes.paper} id="callbackForm">
                         <FormGroup className={s.callback}>
                             <FormControl>
                                 <InputLabel htmlFor="name">Имя</InputLabel>
-                                <Input id="name" aria-describedby="my-helper-text"/>
-                            </FormControl>
-                            <FormControl>
-                                <InputLabel htmlFor="email">Email</InputLabel>
-                                <Input id="email" aria-describedby="my-helper-text"/>
+                                <Input type="text" id="name" aria-describedby="my-helper-text"/>
                             </FormControl>
                             <FormControl>
                                 <InputLabel htmlFor="phone">Телефон</InputLabel>
-                                <Input id="phone" aria-describedby="my-helper-text"/>
-                                <FormHelperText id="my-helper-text">Для обратного звонка укажите Ваш номер телефона.</FormHelperText>
+                                <Input type="text" id="phone" aria-describedby="my-helper-text"/>
+                                <FormHelperText id="my-helper-text">Для обратного звонка укажите Ваш номер
+                                    телефона.</FormHelperText>
                             </FormControl>
-                            <Button className={s.submit} variant="contained" color="primary" type="submit">Заказать звонок</Button>
+
                         </FormGroup>
-                    </div>
+                        <Button className={s.submit} variant="contained" color="primary" type="submit">Заказать
+                            звонок</Button>
+                    </form>
                 </Fade>
             </Modal>
         </ButtonGroup>
     )
 };
+
 
 export default CallbackModal;
