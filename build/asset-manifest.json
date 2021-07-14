@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfd13e37.chunk.css",
-    "main.js": "/static/js/main.b0fd0285.chunk.js",
-    "main.js.map": "/static/js/main.b0fd0285.chunk.js.map",
+    "main.css": "/static/css/main.ab8a9711.chunk.css",
+    "main.js": "/static/js/main.639291cd.chunk.js",
+    "main.js.map": "/static/js/main.639291cd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.48acf569.js",
     "runtime-main.js.map": "/static/js/runtime-main.48acf569.js.map",
     "static/css/2.86a5f087.chunk.css": "/static/css/2.86a5f087.chunk.css",
-    "static/js/2.8d6b7451.chunk.js": "/static/js/2.8d6b7451.chunk.js",
-    "static/js/2.8d6b7451.chunk.js.map": "/static/js/2.8d6b7451.chunk.js.map",
+    "static/js/2.e5322604.chunk.js": "/static/js/2.e5322604.chunk.js",
+    "static/js/2.e5322604.chunk.js.map": "/static/js/2.e5322604.chunk.js.map",
     "static/js/3.f4e25a11.chunk.js": "/static/js/3.f4e25a11.chunk.js",
     "static/js/3.f4e25a11.chunk.js.map": "/static/js/3.f4e25a11.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.86a5f087.chunk.css.map": "/static/css/2.86a5f087.chunk.css.map",
-    "static/css/main.bfd13e37.chunk.css.map": "/static/css/main.bfd13e37.chunk.css.map",
-    "static/js/2.8d6b7451.chunk.js.LICENSE.txt": "/static/js/2.8d6b7451.chunk.js.LICENSE.txt",
+    "static/css/main.ab8a9711.chunk.css.map": "/static/css/main.ab8a9711.chunk.css.map",
+    "static/js/2.e5322604.chunk.js.LICENSE.txt": "/static/js/2.e5322604.chunk.js.LICENSE.txt",
     "static/media/BMW_Grey_Logo.70013e13.svg": "/static/media/BMW_Grey_Logo.70013e13.svg",
+    "static/media/Product.module.scss": "/static/media/bmw-bike.bf60fb00.jpg",
     "static/media/bmw1.49274298.png": "/static/media/bmw1.49274298.png",
     "static/media/bmw1_blue.b8551ee7.png": "/static/media/bmw1_blue.b8551ee7.png",
     "static/media/bmw2.26efd327.png": "/static/media/bmw2.26efd327.png",
@@ -23,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.48acf569.js",
     "static/css/2.86a5f087.chunk.css",
-    "static/js/2.8d6b7451.chunk.js",
-    "static/css/main.bfd13e37.chunk.css",
-    "static/js/main.b0fd0285.chunk.js"
+    "static/js/2.e5322604.chunk.js",
+    "static/css/main.ab8a9711.chunk.css",
+    "static/js/main.639291cd.chunk.js"
   ]
 }

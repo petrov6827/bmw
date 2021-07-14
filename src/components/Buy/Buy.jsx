@@ -16,7 +16,7 @@ const Buy = (props) => {
         <FormControl>
             <InputLabel htmlFor="phone">Телефон</InputLabel>
             <Input id="phone" aria-describedby="my-helper-text"/>
-            <FormHelperText id="my-helper-text">Для оформления заказа укажите Ваш номер телефона.</FormHelperText>
+            <FormHelperText id="my-helper-text"><p>&nbsp;</p></FormHelperText>
         </FormControl>
         <Button className={s.submit} variant="contained" color="primary" type="submit" value="Отправить">Оставить
             заявку</Button>

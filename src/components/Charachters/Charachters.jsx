@@ -8,7 +8,7 @@ const Charachters = (props) => {
 
     const productSpec = (
     <div>
-        <div className={s.subtitle}>Характеристики:</div>
+        <div className={s.subtitle}><h3>Характеристики:</h3></div>
         <p>{char}</p>
         <div className={s.subtitle}>Цена: {price} руб.</div>
     </div>

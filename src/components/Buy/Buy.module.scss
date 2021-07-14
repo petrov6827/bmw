@@ -1,17 +1,22 @@
 .buy {
+  margin: 0 50px;
+  @media (max-width: 1200px) {
+
+  }
+  @media (max-width: 960px) {      
+  
+  }
+  @media (max-width: 560px) {
+    margin: 0 20px;
+  }
   text-align: left;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
 .buyform {
   margin-top: -50px;
   width: 300px;
   margin-left: 150px;
 }
-button {
-  margin-top: 30px;
-}
+
 .submit {
   margin: 20px;
   margin-top: 30px;

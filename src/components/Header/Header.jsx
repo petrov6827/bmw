@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Header.module.scss';
 import logo from "../../images/BMW_Grey_Logo.svg";
-import {Link} from "@material-ui/core";
+import { Link } from "@material-ui/core";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import CallbackModal from "../CallbackModal/CallbackModal";
@@ -23,10 +23,13 @@ const Header = (props) => {
                 <img src={logo} className={s.logoheader} alt="logo"/>
                 <Link href="tel:+79191231212" color="primary">
                     {/*<img src={} alt="tel"/>*/}
-                    +7 919 123 12 12
+                    8 (919) 123 12 23
                 </Link>
             </div>
+            <div className={s.header_right}>
                 <CallbackModal />
+            </div>
+                
             </ThemeProvider>
         </div>
     );

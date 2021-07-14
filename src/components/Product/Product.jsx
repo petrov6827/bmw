@@ -59,9 +59,9 @@ const Products = (props) => {
     const [color, changeColor] = useState(bmw1);
 
     const product = (
-        <div>
-            <div className={s.title}>Оригинальные велосипеды BMW в России</div>
-            <div className={s.subtitle_choose}>Выберите велосипед:</div>
+        <div className={s.container}>
+            <div className={s.title}><h1>Оригинальные велосипеды BMW в России</h1></div>
+            <h3 className={s.subtitle_choose}>Выберите велосипед:</h3>
             <div className={s.pr}>
                 <ThemeProvider theme={theme}>
                 <Button className={s.pr_btn} variant="outlined" color="primary"
@@ -100,11 +100,16 @@ const Products = (props) => {
                 </Button>
                 </ThemeProvider>
             </div>
-            <div className={s.ch}>
-                <div className={s.subtitle}>Характеристики:</div>
-                <div className={s.text}>{char}</div>
-                <div className={s.subtitle}>Цена: {price} руб.</div>
-            </div>
+
+                <div className={s.ch}>
+                    <div className={s.subtitle}>Характеристики:</div>
+                    <div className={s.text}>{char}</div>
+                    <div className={s.subtitle_price}>Цена: {price} руб.</div>
+                </div>
+                
+
+           
+            
         </div>
     );
 

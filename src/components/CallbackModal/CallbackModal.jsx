@@ -33,7 +33,7 @@ const CallbackModal = (props) => {
 
     return (
         <ButtonGroup>
-            <Button variant="text" color="primary" href="#callbackModal" type="button"
+            <Button variant="text" color="primary" href="#callbackModal" type="button" 
                     onClick={handleOpen}>
                 Заказать обратный звонок
             </Button>
@@ -59,8 +59,7 @@ const CallbackModal = (props) => {
                             <FormControl>
                                 <InputLabel htmlFor="phone">Телефон</InputLabel>
                                 <Input type="text" id="phone" aria-describedby="my-helper-text"/>
-                                <FormHelperText id="my-helper-text">Для обратного звонка укажите Ваш номер
-                                    телефона.</FormHelperText>
+                                <FormHelperText id="my-helper-text"><p>&nbsp;</p></FormHelperText>
                             </FormControl>
 
                         </FormGroup>
