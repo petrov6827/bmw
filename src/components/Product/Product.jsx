@@ -57,6 +57,7 @@ const Products = (props) => {
     const [char, changeChar] = useState(spec[0].about);
     const [price, changePrice] = useState(100000);
     const [color, changeColor] = useState(bmw1);
+    const [image, changeColorMobile] = useState(bmw1);
 
     const product = (
         <div className={s.container}>
@@ -68,6 +69,7 @@ const Products = (props) => {
                     onClick={() => {
                         changeChar(spec[0].about);
                         changePrice(100000);
+                        changeColorMobile(bmw1);
                     }}
                 >
                     <h3>BMW CRUISE BIKE</h3>
@@ -76,12 +78,14 @@ const Products = (props) => {
                         <ButtonGroup className={s.btns_group}>
                             <Button variant="contained" color="default"
                                 onClick={() => {
-                                    changeColor(bmw1)
+                                    changeColor(bmw1);
+                                    // changeColorMobile(bmw1);
                                 }}>серебристый
                             </Button>
                             <Button variant="contained" color="primary"
                                 onClick={() => {
-                                    changeColor(bmw1_blue)
+                                    changeColor(bmw1_blue);
+                                    // changeColorMobile(bmw1_blue);
                                 }}>синий
                             </Button>
                         </ButtonGroup>
@@ -93,23 +97,22 @@ const Products = (props) => {
                     onClick={() => {
                         changeChar(spec[1].about);
                         changePrice(150000);
+                        changeColorMobile(bmw2);
                     }}
                 >
                     <h3>BMW M BIKE</h3>
                     <img src={bmw2} alt="M Bike"/>
                 </Button>
                 </ThemeProvider>
-            </div>
-
-                <div className={s.ch}>
-                    <div className={s.subtitle}>Характеристики:</div>
-                    <div className={s.text}>{char}</div>
-                    <div className={s.subtitle_price}>Цена: {price} руб.</div>
-                </div>
                 
+            </div>
+            <div className={s.bikeimage__mobile}><img src={image} alt=""/></div>
 
-           
-            
+            <div className={s.ch}>
+                <div className={s.subtitle}><h3>Характеристики:</h3></div>
+                <div className={s.text}>{char}</div>
+                <div className={s.subtitle_price}>Цена: {price} руб.</div>
+            </div>
         </div>
     );
 
