@@ -37,14 +37,9 @@
 .logoheader {
   padding: 5px;
   margin-right: 15px;
-  @media (max-width: 1200px) {
-
-  }
-  @media (max-width: 960px) {      
-
-  }
   @media (max-width: 768px) {
     margin-right: 15px;
+    
   }
 }
 .header_left {
@@ -79,15 +74,24 @@
     position: relative;
   }
   .header_left a {
-    margin-top: -22px;
+    margin-top: -11px;
     color: #303f9f;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
   }
   .header_right  {
     position: absolute;
-    bottom: -3px;
-    left: 90px;
+    bottom: 17px;
+    height: 24px;
+    left: 98px;
+    height: 24px;
   }
   .header_right span {
     font-size: 12px;
+  }
+  .header_right a {
+    padding: 0;
+    
   }
 }

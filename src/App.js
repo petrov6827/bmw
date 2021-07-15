@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Buy from './components/Buy/Buy';
+
 import Footer from './components/Footer/Footer';
 import Products from "./components/Product/Product";
 import React from 'react';
@@ -13,7 +13,7 @@ function App(props) {
         <div className="App">
             <Header/>
             <Products />
-            <Buy />
+
             <Delivery />
             <Footer/>
         </div>

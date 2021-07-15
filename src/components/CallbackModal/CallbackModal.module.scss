@@ -1,5 +1,6 @@
 .callback {
   width: 300px;
+  position: relative;
 }
 .submit {
   width: 200px;
@@ -7,11 +8,29 @@
   margin-top: 30px;
   display: block;
 }
-.phone_form {
-}
 
 #callbackForm .MuiButton-containedPrimary {
   margin: 0 auto;
   display: block;
+  position: relative;
 }
 
+.close_wrapper {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+.close {
+  position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5629 1.22124L1.22193 15.5623C0.886312 15.8979 0.886312 16.442 1.22193 16.7776C1.55754 17.1132 2.10165 17.1132 2.43727 16.7776L16.7783 2.43658C17.1139 2.10097 17.1139 1.55686 16.7783 1.22124C16.4427 0.885627 15.8986 0.885627 15.5629 1.22124Z' fill='%23091A2F'/%3E%3Cpath d='M16.7783 15.562L2.43726 1.22095C2.10164 0.885335 1.55754 0.885335 1.22192 1.22095C0.886304 1.55657 0.886304 2.10067 1.22192 2.43629L15.5629 16.7773C15.8985 17.1129 16.4427 17.1129 16.7783 16.7773C17.1139 16.4417 17.1139 15.8976 16.7783 15.562Z' fill='%23091A2F'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    color: #8a8686;
+    opacity: 0.8;
+    display: block;
+    z-index: 100;
+}

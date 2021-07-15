@@ -6,6 +6,7 @@ import bmw2 from "../../images/m-bike.png";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import {Button, ButtonGroup} from "@material-ui/core";
+import Buy from './../Buy/Buy';
 
 const theme = createMuiTheme({
     palette: {
@@ -14,31 +15,30 @@ const theme = createMuiTheme({
         },
     }
 });
-
+const buy = <Buy />;
 const Products = (props) => {
 
     const cruiseChar = <ul>
         <li>Рама: алюминий.</li>
-        <li>Стойка седла и под рулевой вал выполнены из карбона.</li>
-        <li>Вилка: SR Suntour XCRRL-R с дистанционной блокировкой жёсткости.</li>
-        <li>Механизм переключения Shimano Deore/XT (30 передач).</li>
+        <li>Тормоза: гидравлические дисковые Shimano BR-M395 180 мм (передние), 160 мм (задние).</li>
+        <li>Вилка: SR Suntour XCR RL-R с дистанционной блокировкой жёсткости.</li>
         <li>Седло: Selle Royal Setta S1.</li>
+        <li>Стойка седла и под рулевой вал выполнены из карбона.</li>
+        <li>Переключатель: Shimano Deore/XT (30 передач).</li>
         <li>Руль: Velo VLG-719 Round grips, эргономичные короткие спортивные ручки Herrmanns DD33.</li>
         <li>Ободья: Rodi Airline Plus, 28".</li>
         <li>Шины Continental Cruise CONTACT со вставками из кевлара и светоотражающими полосами.</li>
-        <li>Тормоза: гидравлические дисковые Shimano BR-M395, диаметр дисков 180 мм. спереди и 160 мм. сзади.</li>
         <li>Масса: 14,8 кг.</li>
     </ul>
-
     const mBikeChar = <ul>
         <li>Рама: алюминий.</li>
-        <li>Тормоза: Shimano 180 мм (передние), 160 мм (задние).</li>
-        <li>Вилка: карбон.</li>
+        <li>Тормоза: гидравлические дисковые Shimano BR-M395 180 мм (передние), 160 мм (задние).</li>
+        <li>Вилка: SR Suntour XCR RL-R с дистанционной блокировкой жёсткости.</li>
         <li>Седло: Selle Royal Mach 2, черное.</li>
         <li>Переключатель: Shimano SLX / XT, 11 скоростей (цепная передача).</li>
-        <li>Шины: Continental Grand Sport Extra.</li>
-        <li>Ободья: Rody Airline Corsa 28", черные.</li>
         <li>Грипсы: Ergon GE-1.</li>
+        <li>Ободья: Rody Airline Corsa 28", черные.</li>
+        <li>Шины: Continental Grand Sport Extra.</li>
         <li>Масса: 12,5 кг.</li>
     </ul>
     const spec = [
@@ -109,9 +109,12 @@ const Products = (props) => {
             <div className={s.bikeimage__mobile}><img src={image} alt=""/></div>
 
             <div className={s.ch}>
-                <div className={s.subtitle}><h3>Характеристики:</h3></div>
-                <div className={s.text}>{char}</div>
-                <div className={s.subtitle_price}>Цена: {price} руб.</div>
+                <div className={s.ch_wrapper}>
+                    <div className={s.subtitle}><h3>Характеристики:</h3></div>
+                    <div className={s.text}>{char}</div>
+                    <div className={s.subtitle_price}>Цена: {price} руб.</div>
+                </div>
+                <div className={s.buy_wrapper}>{buy}</div>
             </div>
         </div>
     );

@@ -1,26 +1,35 @@
 .buy {
-  margin: 0 50px;
-  @media (max-width: 1200px) {
-
-  }
-  @media (max-width: 960px) {      
-  
-  }
-  @media (max-width: 560px) {
-    margin: 0 20px;
-  }
   text-align: left;
-}
-@media (min-width: 768px) {
-  .buyform {
-    margin-top: -50px;
-    width: 300px;
-    margin-left: 150px;
+  button {
+    min-width: 100%;
   }
 }
-
 
 .submit {
   margin: 20px;
   margin-top: 30px;
+  min-width: 250px;
+}
+@media (min-width: 560px) {
+  .buy {
+    text-align: left;
+    button {
+      min-width: 400px;
+      display: flex;
+      justify-content: center;
+margin: 0 auto;
+      
+    }
+  }
+}
+@media (min-width: 768px) {
+  .submit {
+    margin: 20px;
+    margin-top: 30px;
+  }
+  .buy {
+    button {
+      min-width: 250px;
+    }
+  }
 }
