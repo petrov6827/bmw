@@ -11,11 +11,14 @@
   }
   text-align: left;
 }
-.buyform {
-  margin-top: -50px;
-  width: 300px;
-  margin-left: 150px;
+@media (min-width: 768px) {
+  .buyform {
+    margin-top: -50px;
+    width: 300px;
+    margin-left: 150px;
+  }
 }
+
 
 .submit {
   margin: 20px;

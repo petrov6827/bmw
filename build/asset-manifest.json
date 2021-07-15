@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0483b8da.chunk.css",
-    "main.js": "/static/js/main.ebc69240.chunk.js",
-    "main.js.map": "/static/js/main.ebc69240.chunk.js.map",
+    "main.css": "/static/css/main.3cbec48e.chunk.css",
+    "main.js": "/static/js/main.c4cf8de6.chunk.js",
+    "main.js.map": "/static/js/main.c4cf8de6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.48acf569.js",
     "runtime-main.js.map": "/static/js/runtime-main.48acf569.js.map",
     "static/css/2.86a5f087.chunk.css": "/static/css/2.86a5f087.chunk.css",
@@ -12,20 +12,20 @@
     "static/js/3.f4e25a11.chunk.js.map": "/static/js/3.f4e25a11.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.86a5f087.chunk.css.map": "/static/css/2.86a5f087.chunk.css.map",
-    "static/css/main.0483b8da.chunk.css.map": "/static/css/main.0483b8da.chunk.css.map",
+    "static/css/main.3cbec48e.chunk.css.map": "/static/css/main.3cbec48e.chunk.css.map",
     "static/js/2.648d88b8.chunk.js.LICENSE.txt": "/static/js/2.648d88b8.chunk.js.LICENSE.txt",
     "static/media/BMW_Grey_Logo.70013e13.svg": "/static/media/BMW_Grey_Logo.70013e13.svg",
     "static/media/Product.module.scss": "/static/media/bmw-bike.bf60fb00.jpg",
-    "static/media/bmw1.49274298.png": "/static/media/bmw1.49274298.png",
-    "static/media/bmw1_blue.b8551ee7.png": "/static/media/bmw1_blue.b8551ee7.png",
-    "static/media/bmw2.26efd327.png": "/static/media/bmw2.26efd327.png",
+    "static/media/cruise-blue.0fe2b2d6.png": "/static/media/cruise-blue.0fe2b2d6.png",
+    "static/media/cruise-white.00741c47.png": "/static/media/cruise-white.00741c47.png",
+    "static/media/m-bike.e0538aa8.png": "/static/media/m-bike.e0538aa8.png",
     "static/media/index.css": "/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.48acf569.js",
     "static/css/2.86a5f087.chunk.css",
     "static/js/2.648d88b8.chunk.js",
-    "static/css/main.0483b8da.chunk.css",
-    "static/js/main.ebc69240.chunk.js"
+    "static/css/main.3cbec48e.chunk.css",
+    "static/js/main.c4cf8de6.chunk.js"
   ]
 }

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import s from './Product.module.scss';
-import bmw1 from "../../images/bmw1.png";
-import bmw1_blue from "../../images/bmw1_blue.png";
-import bmw2 from "../../images/bmw2.png";
+import bmw1 from "../../images/cruise-white.png";
+import bmw1_blue from "../../images/cruise-blue.png";
+import bmw2 from "../../images/m-bike.png";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import {Button, ButtonGroup} from "@material-ui/core";
