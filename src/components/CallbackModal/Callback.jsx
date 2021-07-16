@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import s from "../CallbackModal/Callback.module.scss";
 import { Button, FormControl, FormGroup, FormHelperText, Input, InputLabel } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
@@ -8,6 +9,12 @@ import Fade from "@material-ui/core/Fade";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import { send, init } from 'emailjs-com';
+init("user_CfZFw9QkS0gi82qgU6JU5");
+
+const schema = yup.object().shape({
+    phone: yup.number().positive().integer().required(),
+});
 
 const Callback = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -34,12 +41,6 @@ const Callback = (props) => {
         setOpen(false);
     };
 
-    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
-
-    const schema = yup.object().shape({
-        name: yup.string().required(),
-        phone: yup.string().matches(phoneRegExp, 'Проверьте телефон'),
-    });
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
@@ -77,13 +78,8 @@ const Callback = (props) => {
                             </FormControl>
                             <FormControl>
                                 <InputLabel htmlFor="phone">Телефон</InputLabel>
-                                <Input type="text" {...register("phone", {
-                                    pattern: {
-                                        value: /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-                                        message: 'error message'
-                                    }
-                                })} id="phone" aria-describedby="my-helper-text" />
-                                <FormHelperText id="my-helper-text">&nbsp;{errors.name?.type === 'required' && "Введите номер телефона"}</FormHelperText>
+                                <Input type="text" {...register("phone", { required: true })} id="phone" aria-describedby="my-helper-text" />
+                                <FormHelperText id="my-helper-text">&nbsp;{errors.phone?.type === 'required' && "Введите номер телефона"}</FormHelperText>
                             </FormControl>
                         </FormGroup>
                         <Button className={s.callback_submit} variant="contained" color="primary" type="submit">Заказать

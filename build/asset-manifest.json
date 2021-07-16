@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.90366498.chunk.css",
-    "main.js": "/static/js/main.87e82dc3.chunk.js",
-    "main.js.map": "/static/js/main.87e82dc3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9c1f1cf0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9c1f1cf0.js.map",
+    "main.css": "/static/css/main.d7db9bc9.chunk.css",
+    "main.js": "/static/js/main.4b9b6571.chunk.js",
+    "main.js.map": "/static/js/main.4b9b6571.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.39abad07.js",
+    "runtime-main.js.map": "/static/js/runtime-main.39abad07.js.map",
     "static/css/2.86a5f087.chunk.css": "/static/css/2.86a5f087.chunk.css",
-    "static/js/2.fcbe0e3f.chunk.js": "/static/js/2.fcbe0e3f.chunk.js",
-    "static/js/2.fcbe0e3f.chunk.js.map": "/static/js/2.fcbe0e3f.chunk.js.map",
-    "static/js/3.2f79f6ab.chunk.js": "/static/js/3.2f79f6ab.chunk.js",
-    "static/js/3.2f79f6ab.chunk.js.map": "/static/js/3.2f79f6ab.chunk.js.map",
+    "static/js/2.cab38e66.chunk.js": "/static/js/2.cab38e66.chunk.js",
+    "static/js/2.cab38e66.chunk.js.map": "/static/js/2.cab38e66.chunk.js.map",
+    "static/js/3.02271ff5.chunk.js": "/static/js/3.02271ff5.chunk.js",
+    "static/js/3.02271ff5.chunk.js.map": "/static/js/3.02271ff5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.86a5f087.chunk.css.map": "/static/css/2.86a5f087.chunk.css.map",
-    "static/css/main.90366498.chunk.css.map": "/static/css/main.90366498.chunk.css.map",
-    "static/js/2.fcbe0e3f.chunk.js.LICENSE.txt": "/static/js/2.fcbe0e3f.chunk.js.LICENSE.txt",
+    "static/css/main.d7db9bc9.chunk.css.map": "/static/css/main.d7db9bc9.chunk.css.map",
+    "static/js/2.cab38e66.chunk.js.LICENSE.txt": "/static/js/2.cab38e66.chunk.js.LICENSE.txt",
     "static/media/BMW_Grey_Logo.70013e13.svg": "/static/media/BMW_Grey_Logo.70013e13.svg",
     "static/media/Product.module.scss": "/static/media/bmw-bike.bf60fb00.jpg",
     "static/media/cruise-blue.0fe2b2d6.png": "/static/media/cruise-blue.0fe2b2d6.png",
@@ -22,10 +22,10 @@
     "static/media/index.css": "/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.9c1f1cf0.js",
+    "static/js/runtime-main.39abad07.js",
     "static/css/2.86a5f087.chunk.css",
-    "static/js/2.fcbe0e3f.chunk.js",
-    "static/css/main.90366498.chunk.css",
-    "static/js/main.87e82dc3.chunk.js"
+    "static/js/2.cab38e66.chunk.js",
+    "static/css/main.d7db9bc9.chunk.css",
+    "static/js/main.4b9b6571.chunk.js"
   ]
 }
