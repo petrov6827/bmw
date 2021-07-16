@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hookform/resolvers": "^2.6.1",
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -13,8 +14,14 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-hook-form": "^7.11.0",
+    "react-input-mask": "^2.0.4",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.0"
+    "type-fest": "^1.2.2",
+    "web-vitals": "^1.1.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-plugin-serve": "^1.4.1",
+    "yup": "^0.32.9"
   },
   "scripts": {
     "start": "react-scripts start",

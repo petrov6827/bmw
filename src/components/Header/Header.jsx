@@ -4,7 +4,8 @@ import logo from "../../images/BMW_Grey_Logo.svg";
 import { Link } from "@material-ui/core";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import CallbackModal from "../CallbackModal/CallbackModal";
+// import CallbackModal from "../CallbackModal/CallbackModal";
+import Callback from '../CallbackModal/Callback';
 
 const theme = createMuiTheme({
     palette: {
@@ -27,9 +28,8 @@ const Header = (props) => {
                 </Link>
             </div>
             <div className={s.header_right}>
-                <CallbackModal />
+                <Callback />
             </div>
-                
             </ThemeProvider>
         </div>
     );
